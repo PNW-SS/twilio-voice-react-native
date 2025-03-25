@@ -1,9 +1,9 @@
 {
   "type": "JavaScript",
   "ci": "circleci",
-  "slug": "twilio/twilio-voice-react-native",
+  "slug": "circleci/Y2xQixqpMskYT2q9xGEJoL/8c6VaKCGarXHwGYN4oH4sE",
   "env": {
-    "GH_REF": "github.com/twilio/twilio-voice-react-native.git"
+    "GH_REF": "github.com/PNW-SS/twilio-voice-react-native.git"
   },
   "plans": {
     "release": {
