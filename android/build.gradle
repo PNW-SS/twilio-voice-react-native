@@ -7,7 +7,8 @@ buildscript {
     'androidxCore'       : '1.10.1',
     'androidxLifecycle'  : '2.2.0',
     'audioSwitch'        : '1.1.8',
-    'firebaseMessaging'  : '23.4.0'
+    'firebaseMessaging'  : '23.4.0',
+    "kotlin": "1.9.24"
   ]
   if (project == rootProject) {
     repositories {
@@ -16,12 +17,14 @@ buildscript {
     }
 
     dependencies {
+      classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
       classpath "com.android.tools.build:gradle:${versions.androidGradlePlugin}"
       classpath "com.google.gms:google-services:${versions.googleServices}"
     }
   }
 }
 
+apply plugin: "kotlin-android"
 apply plugin: 'com.android.library'
 
 def safeExtGet(prop, fallback) {
